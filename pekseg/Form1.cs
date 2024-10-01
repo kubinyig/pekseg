@@ -119,7 +119,7 @@ namespace pekseg
             try
             {
                 connection.Open();
-                string query = $"DELETE FROM keszlet WHERE name =  '{name}'";
+                                string query = $"DELETE FROM keszlet WHERE name =  '{name}'";
                 MySqlCommand command = new MySqlCommand(query, connection);
                 command.ExecuteNonQuery();
                 command.Dispose();
